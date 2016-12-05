@@ -4,9 +4,12 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
+  var me = {
+    name: 'Marc',
+    age: 22
+  }
 
-
-
+alert(me.name);
 
 //NEXT PROBLEM
 
