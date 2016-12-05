@@ -262,7 +262,13 @@ function makePerson(name, birthday, ssn) {
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return {
+    cardNumber: cardNumber * Math.random(),
+    expirationDate: expirationDate * Math.random(),
+    securityCode: securityCode * Math.random()
+  }
+}
 
 
 //NEXT PROBLEM
@@ -275,3 +281,9 @@ function makePerson(name, birthday, ssn) {
 */
 
   //Code Here
+function bindCard(obj, credit) {
+  var newObj = {};
+  for(var prop in obj) {newObj[prop] = obj[prop]}
+  for(var prop2 in credit) {newObj[prop2] = credit[prop2]}
+  return newObj;
+}
