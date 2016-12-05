@@ -130,11 +130,22 @@ for (var prop in album) {
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
   //Code Here
+  var states =  {
+    Provo: 27,
+    Dallas: 23,
+    Utah: 25,
+    Pa: 93,
+    Sa: 38
+  }
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
   //Code Here
-
+for(var prop in states) {
+  if(states[prop] > 30000) {
+    alert('state');
+  }
+}
 
 
 
@@ -155,11 +166,16 @@ var user1 = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
-
+  for ( var prop in user1) {
+    if(!user1[prop]) {
+      delete user1[prop];
+    }
+  }
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
-
+user1.name = 'Marc';
+user1.username = 'castfinder';
 
 
 
@@ -183,7 +199,8 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
-
+  user2.name = 'Tyler S. McGinnis';
+  user2.email = 'tyler.mcginnis@devmounta.in';
 //Now call the sayEmail method that's on the user object which will alert the users email
 
   //Code Here
