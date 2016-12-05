@@ -204,7 +204,7 @@ var user2 = {
 //Now call the sayEmail method that's on the user object which will alert the users email
 
   //Code Here
-
+user2.sayEmail();
 
 
 
